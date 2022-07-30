@@ -13,13 +13,18 @@
   <header>
     <div class="container">
       <div class="brand">
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="/" target="_self" rel="noopener noreferrer">
           <img src="images/logo.svg" alt="Frontend Mentor">
         </a>
       </div>
-      <nav>
-        <ul>
-          <li>Features
+      <div class="nav-toggle">
+        <img class="bars" src="images/icon-menu.svg" alt="">
+        <img class="x" src="images/icon-close-menu.svg" alt="">
+      </div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li class="drop">Features 
+            <img src="images/icon-arrow-down.svg" alt="">
             <ul>
               <li><a href=""><img src="images/icon-todo.svg" alt="todo list"></a>Todo List</a></li>
               <li><a href=""><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
@@ -27,8 +32,9 @@
               <li><a href=""><img src="images/icon-planning.svg" alt="planning">Planning</a></li>
             </ul>
           </li>
-          <li>Company
-            <ul>
+          <li class="drop">Company
+            <img src="images/icon-arrow-down.svg" alt="">
+            <ul class="second">
               <li><a href="">History</a></li>
               <li><a href="">Our Team</a></li>
               <li><a href="">Blog</a></li>
@@ -39,7 +45,7 @@
         </ul>
         <div class="for-user">
           <button>Login</button>
-          <button>Register</button>
+          <button class="default">Register</button>
         </div>
       </nav>
     </div>
@@ -50,24 +56,26 @@
         <h1>Make remote work</h1>
         <p class="headline">Get your team in sync, no matter your location. Streamline processes, 
           create team rituals, and watch productivity soar.</p>
-        <button>Learn more</button> 
+        <button class="cta">Learn more</button> 
         <div class="companies">
           <img src="images/client-databiz.svg" alt="">
           <img src="images/client-audiophile.svg" alt="">
           <img src="images/client-meet.svg" alt="">
-          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
         </div> 
       </div>
       <div class="hero">
-        <img src="images/image-hero-desktop.png" alt="">
+        <img src="images/image-hero-mobile.png" alt="">
       </div>
     </div>
   </main>
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Rumen Stoyanov</a>.
     </div>
-  </footer>  
+  </footer> 
+  <div class="darker"></div>
+  <script src="main.js"></script> 
 </body>
 </html>

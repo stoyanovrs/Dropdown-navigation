@@ -1,0 +1,130 @@
+@import '../base/varibles';
+@media(min-width: $mobile-breakpoint ) {
+  
+}
+.nav-toggle {
+  z-index: 5;
+  cursor: pointer;
+  .x {
+    display: none;
+  }
+  @media(min-width: $mobile-breakpoint ) {
+    display: none;
+  }
+}
+.opened {
+  .bars {
+    display: none;
+  }
+  .x{
+    display: block;
+  }
+}
+.main-nav {
+  height: 100vh; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  background: var(--almost-white);
+  right: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: var(--trans); /* 0.5 second transition effect to slide in the sidenav */
+  
+  padding-top: 60px; /* Place content 60px from the top */
+  @media(min-width: $mobile-breakpoint ) {
+    display: flex;
+    position: relative;
+    padding: 0;
+    height: auto;
+    width: 100%;
+  }
+  .menu {
+    padding: 1.5rem;
+    margin: 0;
+    @media(min-width: $mobile-breakpoint ) {
+      display: flex;
+      padding: 0.5rem;
+      
+    }
+  }
+  ul li {
+    padding: 0.7rem 0;
+    overflow-x: hidden;
+    @media(min-width: $mobile-breakpoint ) {
+      position: relative;
+    }
+      
+      margin-left: 1.5rem;
+    }
+    img {
+      margin-left: 0.6rem;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .drop ul{
+    height: 0;
+    overflow-x: hidden;
+    @media(min-width: $mobile-breakpoint ) {
+      position: absolute;
+    }
+  
+  }
+  .droped ul{
+    height: auto;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+    @media(min-width: $mobile-breakpoint ) {
+      position: relative;
+      
+    }
+    img {
+      margin-right: 1rem;
+    }
+    li {
+      margin: 0.4rem 0;
+    }
+    @media(min-width: $mobile-breakpoint ) {
+      position: fixed;
+      background: var(--almost-white);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.3);
+      top: 6rem;
+      left: 3.5rem;
+      
+    }
+    
+  }
+
+
+.drop {
+  cursor: pointer;
+}
+
+.open {
+  width: 65vw;
+}
+.display {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: var(--trans);
+}
+.for-user {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding: 0 1.5rem;
+  @media(min-width: $mobile-breakpoint ) {
+    flex-direction: row;
+    padding: 0.5rem;
+    margin-left: auto;
+  }
+}

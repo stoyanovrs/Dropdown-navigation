@@ -1,0 +1,18 @@
+button {
+  background: none;
+  border: none;
+  line-height: 148%;
+  padding: 0.6rem 1rem;
+  color: var(--medium-gray);
+}
+.default {
+  border: 2px solid var(--medium-gray);
+  border-radius: var(--radius);
+}
+.cta {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  border-radius: var(--radius);
+  margin: 1.2rem;
+}

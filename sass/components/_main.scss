@@ -1,0 +1,31 @@
+main {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    .info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      p {
+        margin: 0 1rem;
+        color: var(--medium-gray);
+      }
+    }
+    .hero img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 1rem;
+  gap: 1rem;
+  img {
+    width: 20vw;
+    height: auto;
+  }
+}

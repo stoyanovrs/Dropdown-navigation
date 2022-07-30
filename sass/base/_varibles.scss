@@ -4,10 +4,20 @@ $almost-black: hsl(0, 0%, 8%);
 
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 
+
+$mobile-breakpoint: 500px;
+
 :root {
   --almost-white: #{$almost-white};
+  --medium-gray: #{$medium-gray};
+  --almost-black: #{$almost-black};
+
+  --trans: 0.5s;
+  --radius: 1rem;
+  --mobile-breakpoint: 500px;
 }
 body{
   background-color: var(--almost-white);
   font-family: 'Epilogue', sans-serif;
+  
 }
