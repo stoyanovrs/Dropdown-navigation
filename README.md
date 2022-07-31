@@ -42,8 +42,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/stoyanovrs/Dropdown-navigation)
-- Live Site URL: [Add live site URL here](https://stoyanovrs.github.io/Dropdown-navigation)
+- Solution URL: [The solution](https://github.com/stoyanovrs/Dropdown-navigation)
+- Live Site URL: [Live site ](https://stoyanovrs.github.io/Dropdown-navigation)
 
 ## My process
 
