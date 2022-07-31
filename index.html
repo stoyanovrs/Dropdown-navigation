@@ -24,8 +24,9 @@
       <nav class="main-nav">
         <ul class="menu">
           <li class="drop">Features 
-            <img src="images/icon-arrow-down.svg" alt="">
-            <ul>
+            <img class="down" src="images/icon-arrow-down.svg" alt="">
+            <img class="up" src="images/icon-arrow-up.svg" alt="">
+            <ul class="first">
               <li><a href=""><img src="images/icon-todo.svg" alt="todo list"></a>Todo List</a></li>
               <li><a href=""><img src="images/icon-calendar.svg" alt="calendar">Calendar</a></li>
               <li><a href=""><img src="images/icon-reminders.svg" alt="reminders">Reminders</a></li>
@@ -33,7 +34,8 @@
             </ul>
           </li>
           <li class="drop">Company
-            <img src="images/icon-arrow-down.svg" alt="">
+            <img class="down" src="images/icon-arrow-down.svg" alt="">
+            <img class="up" src="images/icon-arrow-up.svg" alt="">
             <ul class="second">
               <li><a href="">History</a></li>
               <li><a href="">Our Team</a></li>
@@ -65,7 +67,14 @@
         </div> 
       </div>
       <div class="hero">
-        <img src="images/image-hero-mobile.png" alt="">
+        <!-- <img src="images/image-hero-mobile.png" alt=""> -->
+        <picture>
+          <source srcset="images/image-hero-desktop.png"
+                  media="(min-width: 1023px)">
+          <source srcset="images/image-hero-mobile.png"
+                  media="(min-width: 1022px)">
+          <img src="images/image-hero-mobile.png" />
+        </picture>
       </div>
     </div>
   </main>

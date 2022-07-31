@@ -1,18 +1,34 @@
+@import '../base/varibles';
 button {
   background: none;
   border: none;
   line-height: 148%;
   padding: 0.6rem 1rem;
   color: var(--medium-gray);
+  cursor: pointer;
+  &:hover {
+    color: var(--almost-black);
+  }
 }
 .default {
   border: 2px solid var(--medium-gray);
   border-radius: var(--radius);
+  &:hover {
+    border-color: var(--almost-black) ;
+  }
 }
 .cta {
   padding: 0.8rem 1.5rem;
   background-color: var(--almost-black);
   color: var(--almost-white);
   border-radius: var(--radius);
+  border: 2px solid var(--almost-black);
   margin: 1.2rem;
+  &:hover {
+    background-color: var(--almost-white);
+    
+  }
+  @media(min-width: $mobile-breakpoint ) {
+    margin: 2rem 0;
+  }
 }

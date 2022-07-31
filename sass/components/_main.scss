@@ -1,15 +1,36 @@
+@import '../base/varibles';
 main {
   .container {
     display: flex;
     flex-direction: column-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media(min-width: $mobile-breakpoint ) {
+      flex-direction: row;
+      align-items: center;
+      gap: 7rem;
+    }
     .info {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
+      @media(min-width: $mobile-breakpoint ) {
+        align-items: flex-start;
+        text-align: start;
+        h1 {
+          font-size: 5.4rem;
+          margin-bottom: 1.5rem;
+        }
+      }
       p {
         margin: 0 1rem;
         color: var(--medium-gray);
+        @media(min-width: $mobile-breakpoint ) {
+          margin: 2rem 0 ;
+          width: 80%;
+          line-height: 180%;
+        }
       }
     }
     .hero img{
@@ -23,9 +44,20 @@ main {
   align-items: center;
   justify-content: space-between;
   margin: 3rem 1rem;
-  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media(min-width: $mobile-breakpoint ) {
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 6rem 0;
+    margin-bottom: 0;
+    
+  }
   img {
-    width: 20vw;
+    max-width: 18%;
     height: auto;
+    @media(min-width: $mobile-breakpoint ) {
+      max-width: 100%;
+    }
   }
 }
