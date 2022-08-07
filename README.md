@@ -59,7 +59,7 @@ Biggest challenge for me was to make the dropdown menu to work properly.
 
 ## Author
 
-- Website - [Add your name here](https://stoyanovrs.github.io)
+- Website - [Rumen Stoyanov](https://github.com/stoyanovrs)
 - Frontend Mentor - [@stoyanovrs](https://www.frontendmentor.io/profile/stoyanovrs)
 - Twitter - [@stoyanovrs](https://www.twitter.com/stoyanovrs)
 
